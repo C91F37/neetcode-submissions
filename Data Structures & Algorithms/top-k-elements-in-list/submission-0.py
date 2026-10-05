@@ -16,7 +16,6 @@ class Solution:
         ret = []
         for key in h: 
             r[h.get(key)].append(key) # r[freq] = [nums..]
-        # im using a 1d array. but if it is -9999 means there is no number...
         for a in range(len(nums), -1, -1):
             if r[a] == []:
                 continue
